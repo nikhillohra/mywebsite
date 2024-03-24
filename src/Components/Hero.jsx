@@ -21,7 +21,7 @@ const Hero = () => {
             <span className="text-[#915eff] ml-4">Nikhil</span>
           </h1>
 
-          <p className={`${styles.heroSubText} mt-28 text-white-100`}>
+          <p className={`${styles.heroSubText} mt-10 text-white-100`}>
             I develop Software & Web Applications with 3D visuals{" "}
             <br className="sm:block hidden" /> to solve modern real-life
             problems.
