@@ -5,9 +5,9 @@ import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className={`relative w-full h-screen mx-auto overflow-x-hidden flex flex-col justify-center items-center ${styles.padding}`}>
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[190px] max-w-8xl mx-auto flex flex-row items-start gap-4]`}
+        className={`${styles.padding} absolute inset-0 top-[190px] max-w-8xl mx-auto flex flex-row items-start gap-4 sm:mx-auto`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="flex flex-col w-4 h-4 rounded-full bg-[hsla(259,90%,62%,1)]" />
@@ -23,7 +23,7 @@ const Hero = () => {
 
           <p className={`${styles.heroSubText} mt-28 text-white-100`}>
             I develop Software & Web Applications with 3D visuals{" "}
-            <br className="sm:block hidden" /> to solve mordern real-life
+            <br className="sm:block hidden" /> to solve modern real-life
             problems.
           </p>
         </div>
@@ -31,10 +31,10 @@ const Hero = () => {
 
       <ComputersCanvas />
 
-      <div className="absolute xs:bottom-0 bottom-10 w-full flex justify-center items-center  ">
+      <div className="absolute xs:bottom-0 bottom-10 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[30px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-1.5 mt-6">
-            <motion.dev
+            <motion.div
               animate={{
                 y: [0, 24, 0],
               }}
