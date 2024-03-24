@@ -12,12 +12,10 @@ const styles = {
       "text-white font-black  md:text-[180px] sm:text-[50px] xs:text-[80px] text-[30px]",
     sectionSubText:
       "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
-   
-     
+
+
+
+}
   
-  
-    
-      
-  };
   
   export { styles };
